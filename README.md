@@ -10,7 +10,7 @@ See: https://github.com/aws/aws-cdk/issues/23708
 4. npm run cdk deploy
 5. Wait a long time for the distribution to be created...
 6. Open lib/aws-cdk-issue-23708-reproduction-repo-stack.ts
-7. To cause the issue you need to do two things at the same time. (Apply the patch below, or follow these steps)
+7. To cause the issue you need to do two things at the same time (I know it is strange)
    a. Rename the BucketDeployment from "DeployAssets" to something else (e.g. "DeployAssets2")
    b. Remove `distribution` and `distributionPaths` from the BucketDeployment parameters
 8. npm run cdk deploy
